@@ -27,6 +27,7 @@ from matplotlib.widgets import Slider, Button
 
 
 dataset = 'C:/Users/tuico/Desktop/Courseca_Machine_Learning/Week_two_Coding _Exercises/ex1data1.txt' #This is the data-set we are extracting our examples From
+# Just change this to the path where your dataset(s) are located
 ################################################################  We will now lpad the text-set using an np.loadtxt function. ################################################################
 data = np.loadtxt(dataset, delimiter=',', skiprows=0, dtype=float)
 
@@ -127,7 +128,7 @@ def GradientDescent(x, y, θ,α , num_iters):
 print('theta found by gradient descent is:', θ_GD)
 print('This agrees with the MATLAB model!')
 
-################################################################ Ploting the linearly fir model with our data set ################################################################
+################################################################ Ploting the linearly fit model with our data set ################################################################
 
 plt.plot(X[:,1],y, 'x', label = 'Training Data')
 plt.plot(X[:,1], X@ θ_GD, label = 'Linear model')
